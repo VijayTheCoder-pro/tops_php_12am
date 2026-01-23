@@ -1,0 +1,49 @@
+<!-- 🧩 GALLERY PRACTICE QUERY (ACCORDING TO YOUR PREVIOUS GALLERY) Bootstrap Grid use karke image gallery layout banao jisme: 📱 MOBILE VIEW (md se chhota) Har image full width me aaye Images ek ke niche ek dikhni chahiye 💻 LAPTOP / DESKTOP VIEW (md aur upar) First row Image 1 → 50% Image 2 → 50% Second row Image 3 → 33% Image 4 → 33% Image 5 → 33% Third row Image 6 → full width 🖼 CONTENT RULES Total 6 images Dummy image use kar sakta hai (same image repeat allowed) Har image ke upar ya niche koi text nahi Sirf  tag inside columns 🔒 STRICT RULES Sirf: row col-* col-md-* ❌ Custom CSS mat likhna ❌ Flex / CSS Grid mat use karna ❌ JS mat use karna -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 05</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <style>
+        div div img {
+            height: 30%;
+            width: 30%;
+        }
+    </style> -->
+    <style>
+        *{
+            background-color:  yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="row mt-5 text-center">
+        <div class="col-12 col-md-6  mt-3 p-2 border border-2 border-dark">
+            <img class="img-fluid" src="leptop.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-6 mt-3 p-2 border border-2 border-dark">
+            <img class="img-fluid" src="mouse.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-4 mt-3 p-2 border border-2 border-dark">
+            <img class="img-fluid" src="grip.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-4 mt-3 p-2 border border-2 border-dark">
+            <img class="img-fluid" src="phone.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-4 mt-3 p-2 border border-2 border-dark">
+            <img class="img-fluid" src="keybord.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-12 mt-3 p-2 border border-2 border-dark">
+            <img class="img-fluid" height="50%" width="50%" src="earbird.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

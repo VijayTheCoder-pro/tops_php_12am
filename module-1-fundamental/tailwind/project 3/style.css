@@ -1,0 +1,126 @@
+:root {
+  --primary-pink: #ec4899;
+  --secondary-purple: #8b5cf6;
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --text-gray: #cbd5f5;
+  --bg-black: #020617;
+  --transition-fast: 0.2s;
+  --transition-slow: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAV LINKS */
+.nav-link {
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+.nav-link:hover,
+.nav-link:focus {
+  transform: scale(1.1);
+  color: var(--primary-pink);
+  outline: 2px solid var(--primary-pink);
+  outline-offset: 2px;
+}
+
+/* GLASS */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  text-align: center;
+  color: var(--text-gray);
+}
+
+/* BUTTON */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-purple));
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.btn-primary:focus {
+  outline: 2px solid white;
+}
+
+/* SERVICES */
+.service-card {
+  background: var(--glass-bg);
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform var(--transition-slow);
+}
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+/* FORM */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+}
+.input-field:focus {
+  outline: 2px solid var(--primary-pink);
+}
+
+/* CONTACT BUTTONS */
+.contact-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+}
+.gmail-btn {
+  background: #ea4335;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--bg-black);
+  margin-top: 80px;
+}
+
+/* MOBILE LINKS */
+.mobile-link {
+  transition: color var(--transition-fast);
+}
+.mobile-link:hover {
+  color: var(--primary-pink);
+}

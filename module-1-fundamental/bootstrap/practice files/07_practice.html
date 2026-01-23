@@ -1,0 +1,64 @@
+<!-- 🧩 BOOTSTRAP PROGRAM TASK (FINAL) 🎯 Goal Bootstrap Grid + spacing sahi use karke ek card section banana (jisme margin
+rule break na ho) 📐 LAYOUT 💻 Desktop (md+) Ek row 4 cards ek hi row me Har card → col-md-3 📱 Mobile Cards one by one
+(auto stack) 📦 HAR CARD ME Ek heading (text) Ek short line (text) Ek button → View 🔒 STRICT RULES (IMPORTANT) ❌ m-*
+left/right bilkul nahi ✅ Sirf mt-* / mb-* ✅ p-* allowed ✅ gap-* allowed ❌ Custom CSS bilkul nahi ❌ Flex / CSS Grid nahi
+✅ Sirf: row col-* col-md-* btn btn-primary ⚠️ CHECKPOINT (SELF-TEST) Desktop pe 4 cards same line me dikh rahe hain?
+Mobile pe 1 by 1 aa rahe hain? Koi card niche gir raha hai? ❌ (to rule break hua) -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Practice 07</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: aliceblue;
+        }
+
+        .navbar {
+            width: 100%;
+            height: auto;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            padding: 24px 10px;
+        }
+
+        .navbar a {
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar position-sticky top-0 p-2 bg-dark">
+        <a href="" class="navbar-brand fs-1 ms-5">Flipcart</a>
+        <ul class="navbar-link fs-4 me-3 ">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">help</a></li>
+            <li><a href="">login</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

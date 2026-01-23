@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar with bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            width: 100%;
+            height: auto;
+        }
+        .navbar ul li{
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        .navbar ul a {
+            text-decoration: none;
+            list-style: none;
+            text-transform: capitalize;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand bg-dark "><a class="navbar-brand fs-1 ms-5" href="#">FLIPCART</a>
+        <ul class="fs-3">
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">content</a></li>
+            <li><a href="">help</a></li>
+            <li class="dropdown"><a href="" class="dropdown-toggle" data-bs-toggle="dropdown">acount</a>
+                <ul class="dropdown-menu">
+                    <li>login</li>
+                    <li>register</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

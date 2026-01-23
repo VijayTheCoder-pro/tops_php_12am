@@ -1,0 +1,90 @@
+/* header */
+.header {
+    background-color: rgb(110, 199, 228);
+    text-shadow: 3px 1px 8px black;
+    /* box-shadow: 3px 5px 8px blue !important; */
+    box-shadow: 3px 5px 8px #00cbff82 !important;
+    z-index: 1;
+}
+
+
+
+.poster:hover {
+    box-shadow: 6px 6px 12px black inset, -5px -6px 10px rgb(151, 200, 217);
+    box-sizing: content-box;
+    /* width: fit-content; */
+    display: inline-block;
+
+}
+
+div input {
+    border: 3px solid rgb(125, 206, 233) !important;
+}
+
+/* 
+#search {
+    border: 2px solid black;
+} */
+
+div button {
+    /* box-shadow: 0 4px 8px green; */
+    box-shadow: 2px 3px 7px blue;
+
+    /* box-shadow:aqua; this is wrong  */
+    /* box-shadow: X-offset Y-offset blur spread color; */
+
+}
+
+/* #addbutton:hover {
+    background-color: white;
+    color: black !important;
+    box-shadow: 2px 3px 7px green;
+    } */
+
+#cartbutton:hover {
+    background-color: white;
+    color: darkblue !important;
+
+    box-shadow: 2px 3px 7px green;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    height: auto;
+}
+
+.navbar ul {
+    margin-left: 40%;
+    /* display: flex;
+        flex-wrap: wrap; */
+}
+
+.navbar ul li {
+    /* color: white !important; */
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 3px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    /* background-color: black; */
+}
+
+.dropdown-menu a {
+    color: black !important;
+}
+
+.navbar>ul>li>a:hover {
+    /* margin: 12px; */
+    padding: 12px;
+    transition: all 0.4s ease;
+    background-color: rgb(64, 59, 59);
+}  
+::selection{
+    color: lightgreen;
+    background-color: black;
+}     

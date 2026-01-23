@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            background-color: lightgray;
+
+        }
+        .box{
+            width: 50%;
+            height: auto;
+            margin: auto;
+            margin-top: 5%;
+            padding: 20px;
+            background-color: transparent;
+        }
+        fieldset{
+            width: 0%;
+            border: 2px solid black;
+        }
+        legend{
+            font-size: 30px;
+        }
+        /* attribute selector */
+        input[type="text"],input[type="password"],input[type="email"],input[type=number]
+        {
+            width: 80%;
+            height: auto;
+            padding: 8px;
+
+        }
+        input[type="submit"]
+        {
+            width: 80%;
+            height: auto;
+            padding: 10%;
+            border: 0;
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+
+
+        }
+        ::placeholder
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>submit bro </legend>
+            <input type="text" placeholder="Enter your name"><br><br>
+            <input type="gmail" placeholder="Enter your gmail"><br><br>
+            <input type="phone" placeholder="Enter your phone"><br><br>
+            <input type="password" placeholder="Enter your password"><br><br>
+            <input type="submit" value="submit"/>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body 
+{
+margin: 0;
+padding: 0;    
+}
+.header 
+{
+z-index: 5; 
+background-color: white;    
+}
+.btn-cart:hover
+{
+color: white !important;
+}
+.navbar 
+{
+width: 100%;
+height: auto;    
+}
+.navbar ul 
+{
+margin-left: 35%;    
+}
+.navbar ul li 
+{
+display: inline-block;
+padding: 1px 25px;   
+font-size: 20px;
+text-transform: capitalize; 
+}
+.navbar a 
+{
+text-decoration: none;
+color: white;    
+}
+hr
+{
+ border: solid 1px black !important;   
+}
+::selection{
+    color: lightgreen;
+    background-color: black;
+}

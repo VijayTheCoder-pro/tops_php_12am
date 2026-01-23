@@ -1,0 +1,71 @@
+/* Navbar background */
+.navbar {
+    background: linear-gradient(90deg, #6366f1, #ec4899, #f59e0b);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand gradient text */
+.brand-text {
+    background: linear-gradient(90deg, #fff, #fde68a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: red;
+    
+}
+
+
+/* Desktop links */
+.nav-link {
+    color: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+/* Active link */
+.active {
+    font-weight: bold;
+    border-bottom: 3px solid white;
+}
+
+/* Mobile menu */
+#mobile-menu {
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+.mobile-link {
+    display: block;
+    padding: 12px 0;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.mobile-link:hover {
+    color: #fde68a;
+    padding-left: 10px;
+}
+::selection{
+    color: lightgreen;
+    background-color: black;
+}

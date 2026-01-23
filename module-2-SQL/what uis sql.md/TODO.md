@@ -1,0 +1,7 @@
+- [x] Fix all typos and grammar errors in what_is_sql.md (e.g., "manupultion" to "manipulation", "inset" to "insert", "form" to "from")
+- [x] Ensure consistent Markdown headings (# ## ###)
+- [x] Format all lists using proper Markdown syntax (- for unordered, 1. for ordered)
+- [x] Format all SQL queries and examples as code blocks with ```sql
+- [x] Structure the DML section properly with subheadings for INSERT, UPDATE, DELETE, SELECT
+- [x] Complete incomplete sections (e.g., finish UPDATE syntax, add SELECT if missing)
+- [x] Ensure consistent capitalization and overall structure

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Web Developer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gradient-to-br from-purple-900 via-indigo-900 to-black text-white">
+
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold text-pink-400">WebDevPro</h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8 text-sm font-semibold">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#support" class="nav-link">Support</a></li>
+      </ul>
+
+      <!-- Hamburger Icon -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white text-3xl">
+          ☰
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden bg-black/90 backdrop-blur-lg">
+        <ul class="flex flex-col items-center gap-6 py-6 text-lg font-semibold">
+          <li><a href="#home" class="mobile-link">Home</a></li>
+          <li><a href="#about" class="mobile-link">About</a></li>
+          <li><a href="#services" class="mobile-link">Services</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+          <li><a href="#support" class="mobile-link">Support</a></li>
+        </ul>
+      </div>
+
+  </nav>
+
+
+  <!-- ================= HOME ================= -->
+  <section id="home" class="min-h-screen flex items-center justify-center text-center px-6">
+    <div class="glass-card p-10 max-w-3xl">
+      <h2 class="text-5xl font-extrabold mb-4">Modern Websites That Convert</h2>
+      <p class="text-lg text-gray-300 mb-6">
+        We design & develop premium websites that build trust and grow business.
+      </p>
+      <a href="#contact" class="btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-text">
+      We are a professional web development service focused on creating modern,
+      fast and conversion-ready websites that help businesses grow online.
+    </p>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="section">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-10">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Modern, colorful and user-friendly UI/UX designs.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Fast, responsive and scalable websites.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Support</h3>
+        <p>Reliable technical support and maintenance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Us</h2>
+
+    <form class="max-w-xl mx-auto glass-card p-8 space-y-4">
+      <input type="text" placeholder="Your Name" class="input-field">
+      <input type="email" placeholder="Your Email" class="input-field">
+      <textarea rows="4" placeholder="Your Message" class="input-field"></textarea>
+      <button class="btn-primary w-full">Send Message</button>
+    </form>
+  </section>
+  <!-- ===== Contact Action Buttons ===== -->
+  <div class="contact-buttons">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/917265912623" target="_blank" class="contact-btn whatsapp-btn">
+      WhatsApp
+    </a>
+
+    <!-- Gmail -->
+    <a href="mailto:support@webdevpro.com" class="contact-btn gmail-btn">
+      Gmail
+    </a>
+
+  </div>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer " id="support">
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <h2>WebDevPro</h2>
+        <p>
+          We build modern, fast and high-converting websites
+          for businesses that want to grow online.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: <span>support@webdevpro.com</span></p>
+        <p>Phone: <span>+91 7265912623</span></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 WebDevPro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
