@@ -370,7 +370,7 @@ SELECT * FROM student WHERE NOT age = 18;
 
 ## 6. DISTINCT (Duplicate data hatane ke liye)
 
-```sql
+```sqls
 SELECT DISTINCT age FROM student;
 ```
 
