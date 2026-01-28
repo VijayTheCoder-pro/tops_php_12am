@@ -256,7 +256,7 @@ DELETE FROM users WHERE user_id IN (1, 2);
 Deletes data based on a condition.
 
 **Syntax:**
-```sql
+```sqlasdfasdfasdfasfaedsgit
 DELETE FROM tbl_name WHERE condition;
 ```
 
