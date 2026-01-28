@@ -267,14 +267,254 @@ DELETE FROM users WHERE age > 25;
 
 2) DQL - stands for data query language
 
-DQL is used to ** select all data or fetch all **
+# SQL DQL (Data Query Language) – Complete Explanation (Hindi)
 
-    1. select * all data from table
+## 1. DQL kya hota hai?
 
-    syntax :
+DQL ka full form **Data Query Language** hota hai.
 
-    2. select paricualar column fo data
+DQL ka use **database se data nikalne (query karne)** ke liye hota hai.
 
-    syntax : 
-    select id,name 
+👉 Simple words me:
+
+* Data dekhna
+* Data search karna
+* Data filter karna
+* Data sort karna
+
+⚠️ DQL data ko **change nahi karta**, sirf data **read** karta hai.
+
+---
+
+## 2. DQL me kaun-si command hoti hai?
+
+DQL me mainly **sirf ek hi command** hoti hai:
+
+👉 **SELECT** ⭐⭐⭐⭐⭐ (SUPER IMPORTANT)
+
+Poori SQL ka sabse zyada use hone wala command = **SELECT**
+
+---
+
+## 3. SELECT command (Heart of SQL ❤️)
+
+### Basic syntax
+
+```sql
+SELECT column_name FROM table_name;
+```
+
+### Example
+
+```sql
+SELECT name FROM student;
+```
+
+➡️ Student table se sirf `name` column ka data milega.
+
+---
+
+### Sab data dekhna (All columns)
+
+```sql
+SELECT * FROM student;
+```
+
+➡️ Table ka poora data show karega.
+
+---
+
+## 4. WHERE clause (Filter karne ke liye) ⭐⭐⭐⭐⭐
+
+WHERE ka use **condition lagane** ke liye hota hai.
+
+### Example
+
+```sql
+SELECT * FROM student WHERE age > 18;
+```
+
+➡️ Sirf wahi students jinki age 18 se zyada hai.
+
+### Operators
+
+* `=` equal
+* `>` greater than
+* `<` less than
+* `>=` , `<=`
+* `!=` not equal
+
+---
+
+## 5. AND / OR / NOT (Multiple conditions)
+
+### AND example
+
+```sql
+SELECT * FROM student WHERE age > 18 AND marks > 60;
+```
+
+### OR example
+
+```sql
+SELECT * FROM student WHERE age > 18 OR marks > 60;
+```
+
+### NOT example
+
+```sql
+SELECT * FROM student WHERE NOT age = 18;
+```
+
+---
+
+## 6. DISTINCT (Duplicate data hatane ke liye)
+
+```sql
+SELECT DISTINCT age FROM student;
+```
+
+➡️ Age repeat nahi hogi.
+
+---
+
+## 7. ORDER BY (Sorting data)
+
+### Ascending (default)
+
+```sql
+SELECT * FROM student ORDER BY marks;
+```
+
+### Descending
+
+```sql
+SELECT * FROM student ORDER BY marks DESC;
+```
+
+---
+
+## 8. LIMIT (Kitna data chahiye)
+
+```sql
+SELECT * FROM student LIMIT 5;
+```
+
+➡️ Sirf first 5 rows milegi.
+
+Real life me use hota hai pagination me.
+
+---
+
+## 9. LIKE (Pattern search) ⭐⭐⭐⭐
+
+```sql
+SELECT * FROM student WHERE name LIKE 'A%';
+```
+
+➡️ Jinka naam A se start hota hai.
+
+### Wildcards
+
+* `%` → kuch bhi
+* `_` → ek character
+
+---
+
+## 10. IN (Multiple values check)
+
+```sql
+SELECT * FROM student WHERE age IN (18, 20, 22);
+```
+
+---
+
+## 11. BETWEEN (Range check)
+
+```sql
+SELECT * FROM student WHERE marks BETWEEN 60 AND 80;
+```
+
+---
+
+## 12. Aggregate Functions (Calculation ke liye) ⭐⭐⭐⭐⭐
+
+| Function | Use        |
+| -------- | ---------- |
+| COUNT()  | total rows |
+| SUM()    | total      |
+| AVG()    | average    |
+| MAX()    | maximum    |
+| MIN()    | minimum    |
+
+### Example
+
+```sql
+SELECT COUNT(*) FROM student;
+```
+
+---
+
+## 13. GROUP BY (Data group karna) ⭐⭐⭐⭐
+
+```sql
+SELECT age, COUNT(*) FROM student GROUP BY age;
+```
+
+➡️ Same age wale students ka group banega.
+
+---
+
+## 14. HAVING (GROUP BY ke sath condition)
+
+```sql
+SELECT age, COUNT(*) FROM student
+GROUP BY age
+HAVING COUNT(*) > 2;
+```
+
+⚠️ WHERE aggregate ke sath kaam nahi karta, HAVING karta hai.
+
+---
+
+## 15. DQL kaha-kaha use hota hai?
+
+1. Reports banane me
+2. Admin panels
+3. Data analysis
+4. Dashboard
+5. Interview / Exam
+
+---
+
+## 16. Exam ke liye MOST IMPORTANT
+
+### ⭐⭐⭐⭐⭐ Very Important
+
+* SELECT
+* WHERE
+* GROUP BY
+* Aggregate functions
+
+### ⭐⭐⭐ Medium
+
+* ORDER BY
+* LIKE
+* IN / BETWEEN
+
+---
+
+## 17. Short Summary
+
+👉 **DQL = Database se data nikalne wali SQL language**
+
+---
+
+Agar chaho to next:
+
+* DQL MCQ + practice questions
+* DQL real interview queries
+* DCL / TCL notes
+
+Bas bolo 👍
 
