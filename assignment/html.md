@@ -2,7 +2,8 @@
 
 HTML stands for HyperText Markup Language.
 
-HTML is the basic language used to create web pages. It helps us to structure the content like text, images, links, and headings on a website. HTML does not perform logic like programming languages, so it is called a markup language.
+HTML is the basic language used to create web pages. It helps us to structure the content like text, images, links, and headings on a website. HTML does not perform logic like programming languages, so it is calle 
+d a markup language.
 
 An HTML document follows a fixed structure which helps the browser understand the page properly.
 
