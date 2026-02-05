@@ -1,7 +1,7 @@
 e 6 – HTML, CSS and JS in PHP
 HTML Basics
  What is HTML? Explain its structure.  Describe the purpose of HTML tags and provide examples of commonly used tags.  What are the differences between block-level and inline elements? Give examples of each.  Explain the concept of semantic HTML and why it is important.
- 2. CSS Fundamentals
+2. CSS Fundamentals
  What is CSS? How does it differ from HTML?
  Explain the three ways to apply CSS to a web page.  What are CSS selectors? List and describe the different types of selectors.  What is the box model in CSS? Explain its components.
 8
