@@ -409,11 +409,15 @@ Real life me use hota hai pagination me.
 ## 9. LIKE (Pattern search) ⭐⭐⭐⭐
 
 ```sql
+
+➡️ Jinka naam A se start hota hai. 
+
 SELECT * FROM student WHERE name LIKE 'A%';
 ```
 
-➡️ Jinka naam A se start hota hai.
+➡️ Jinka naam A se end hota hai.
 
+SELECT * FROM student WHERE name LIKE 'A%';
 ### Wildcards
 
 * `%` → kuch bhi
@@ -508,13 +512,4 @@ HAVING COUNT(*) > 2;
 
 👉 **DQL = Database se data nikalne wali SQL language**
 
----
-
-Agar chaho to next:
-
-* DQL MCQ + practice questions
-* DQL real interview queries
-* DCL / TCL notes
-
-Bas bolo 👍
 
